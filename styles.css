@@ -112,11 +112,11 @@ body {
     color: #d27141;
 }
 
-.login-button {
+ .login-button {
     width: 100%;
     padding: 12px;
-    background-color: #d27141;
-    color: white;
+    background-color: #FFA500;
+    color: #121212;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -124,10 +124,13 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
 .login-button:hover {
-    background-color: #bf653a;
+    background-color: #e69500;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
 }
@@ -165,4 +168,5 @@ body {
     bottom: 20px;
     left: 20px;
     font-size: 40px;
+
 }
