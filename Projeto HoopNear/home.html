@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoopNear - Feed</title>
+    <link rel="stylesheet" href="styles-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Cabeçalho -->
+        <header class="app-header">
+            <div class="logo-container">
+                <h1 class="logo">HOOPNEAR</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar jogadores...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <nav class="user-nav">
+                <a href="#" class="notification-badge">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </a>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Perfil">
+                    <span>João</span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="user-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Perfil">
+                    <h3>João Silva</h3>
+                    <div class="stats">
+                        <div>
+                            <span>42</span>
+                            <small>Jogos</small>
+                        </div>
+                        <div>
+                            <span>28</span>
+                            <small>Amigos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="side-menu">
+                    <a href="#" class="active">
+                        <i class="fas fa-home"></i> Feed
+                    </a>
+                    <a href="meus-jogos.html">
+                        <i class="fas fa-calendar-alt"></i> Meus Jogos
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user-friends"></i> Amigos
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i> Configurações
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Feed de Atividades -->
+            <section class="feed">
+                <!-- Criar Nova Postagem -->
+                <div class="create-post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Perfil">
+                        <input type="text" placeholder="O que você está jogando hoje?">
+                    </div>
+                    <div class="post-options">
+                        <button class="primary">Publicar</button>
+                    </div>
+                </div>
+
+                <!-- Postagem 1 -->
+                <article class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Perfil">
+                        <div>
+                            <h4>Ana Costa</h4>
+                            <p>12 Jun, 18:30</p>
+                        </div>
+                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class="post-content">
+                        <p>Jogando basquete no parque central hoje à tarde. Quem quiser participar é só chegar!</p>
+                        
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Jogando basquete">
+                        </div>
+                    </div>
+
+                    <div class="post-footer">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> Curtir (12)</button>
+                        <button class="comment-btn"><i class="far fa-comment"></i> Comentar (5)</button>
+                    </div>
+                </article>
+
+                <!-- Postagem 2 -->
+                <article class="post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Perfil">
+                        <div>
+                            <h4>Carlos Oliveira</h4>
+                            <p>10 Jun, 15:00</p>
+                        </div>
+                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class="post-content">
+                        <p>Ótimo jogo hoje com a galera! Fotos do jogo:</p>
+                        
+                        <div class="post-gallery">
+                            <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Jogo de basquete">
+                            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Jogo de basquete">
+                        </div>
+                    </div>
+
+                    <div class="post-footer">
+                        <button class="like-btn"><i class="far fa-thumbs-up"></i> Curtir (24)</button>
+                        <button class="comment-btn"><i class="far fa-comment"></i> Comentar (8)</button>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sidebar Direita -->
+            <aside class="right-sidebar">
+                <div class="suggested-friends">
+                    <h3>Amigos Sugeridos</h3>
+                    <div class="friend">
+                        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Amigo">
+                        <div>
+                            <strong>Mariana R.</strong>
+                            <p>15 amigos em comum</p>
+                        </div>
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                    <div class="friend">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Amigo">
+                        <div>
+                            <strong>Ricardo L.</strong>
+                            <p>8 amigos em comum</p>
+                        </div>
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Rodapé Mobile -->
+        <nav class="mobile-nav">
+            <a href="#" class="active"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-plus-circle"></i></a>
+            <a href="#"><i class="fas fa-user-friends"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </nav>
+    </div>
+</body>
+</html>
